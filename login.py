@@ -83,7 +83,7 @@ class Ui_MainWindow(object):
         pas=self.line2.text()
         success="LOGIN SUCCESSFUL"
         nosuccess="LOGIN UNSUCCESSFUL! Try Again "
-        if name=="admin" :
+        if name=="admin" & pas=="admin":
             self.label.setText(success)
         else:
             self.label.setText(nosuccess)
